@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = ""
+name = "test"
+handle = "test"
+application_url = "https://funky-conversely-lamprey.ngrok-free.app"
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "angryalf.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_assigned_fulfillment_orders,read_content,read_customers,read_discounts,read_metaobjects,read_orders,write_assigned_fulfillment_orders,write_content,write_customers,write_discounts,write_metaobjects,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://funky-conversely-lamprey.ngrok-free.app/auth/callback",
+  "https://funky-conversely-lamprey.ngrok-free.app/auth/shopify/callback",
+  "https://funky-conversely-lamprey.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "/api/webhooks"
+
+[pos]
+embedded = false

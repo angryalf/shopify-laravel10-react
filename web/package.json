@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.6.1",
+        "dotenv-webpack": "^8.0.1",
+        "laravel-vite-plugin": "^0.8.0",
+        "sass": "^1.69.5",
+        "tailwindcss": "^3.4.0",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@headlessui/react": "^1.7.17",
+        "@hookform/resolvers": "^3.3.3",
+        "@reduxjs/toolkit": "^1.9.2",
+        "@shopify/app-bridge": "^3.7.2",
+        "@shopify/app-bridge-react": "^3.7.2",
+        "@shopify/polaris": "^12.11.1",
+        "@shopify/polaris-icons": "^8.2.0",
+        "@shopify/shopify-app-remix": "^2.4.0",
+        "@tailwindcss/forms": "^0.5.7",
+        "@tailwindcss/typography": "^0.5.10",
+        "@vitejs/plugin-react": "^4.2.1",
+        "@vitejs/plugin-react-refresh": "^1.3.6",
+        "autoprefixer": "^10.4.16",
+        "clsx": "^2.0.0",
+        "colorsys": "^1.0.22",
+        "i18next": "^23.8.1",
+        "i18next-browser-languagedetector": "^7.2.0",
+        "i18next-http-backend": "^2.4.2",
+        "lodash": "^4.17.21",
+        "postcss": "^8.4.32",
+        "prop-types": "^15.8.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.49.2",
+        "react-i18next": "^14.0.1",
+        "react-redux": "^8.1.3",
+        "react-router-dom": "^6.21.1",
+        "yup": "^1.3.3"
+    }
+}
